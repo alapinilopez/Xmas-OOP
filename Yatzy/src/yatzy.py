@@ -11,10 +11,10 @@ class Yatzy:
         return score
         
 
-    @staticmethod
-    def yatzy(*dice):
-        counts = [0]*(len(dice)+1)
-        for value in dice:
+    @staticmethod #no entiendo qué hace esto lol
+    def yatzy(*dice): 
+        counts = [0]*(len(dice)+1) #posicion 0 del dado multiplicada por la longitud del dado + 1
+        for value in dice: 
             counts[value-1] += 1
         for i in range(len(counts)):
             if counts[i] == 5:
