@@ -11,7 +11,7 @@ class NIF:
      
     def get_char(self, position):
         try:
-            return self.tabla[position]
+            return self.valid_chars[position]
         except:
             return 'Fuera de rango'
 

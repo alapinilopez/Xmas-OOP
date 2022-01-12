@@ -27,8 +27,8 @@ class DNI:
         return self.DNI[:-1]
 
     def DNI_check(self):
-        if self.DNISano:
-            if self.tabla.calcularLetra(self.DNINumbers()) == self.getLetter():
+        if self.DNI_healthy:
+            if self.NIF.valid_chars(self.DNI_nums()) == self.get_letter():
                 return True
             else: 
                 return False
