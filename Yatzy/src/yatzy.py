@@ -71,6 +71,7 @@ class Yatzy:
     
     @staticmethod
     def score_pair( d1,  d2,  d3,  d4,  d5):
+        pair = 2
         counts = [0]*6
         counts[d1-1] += 1
         counts[d2-1] += 1
